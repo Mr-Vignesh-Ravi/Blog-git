@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP/1.1 vs. HTTP/2: Unraveling the Differences</title>
+</head>
+<body>
+    <h1>HTTP/1.1 vs. HTTP/2: Unraveling the Differences</h1>
+   
+    <h2>Binary vs. Textual:</h2>
+    <li>HTTP/1.1 communicates using plain text. Requests and responses are human-readable, 
+        but this can lead to inefficiencies due to parsing overhead.</li>
+    <li>HTTP/2, on the other hand, uses binary framing. It’s like switching from handwritten letters to a more efficient secret code. 
+        The binary format reduces parsing complexity and speeds up communication.</li>
+
+        <h2>Multiplexing:</h2>
+
+        <li>HTTP/1.1: Imagine a highway where each car follows the one in front. Requests are processed sequentially, leading to potential bottlenecks.</li>
+        <li>HTTP/2: Picture a multi-lane expressway. It allows multiplexing, meaning multiple requests and responses can travel concurrently over a single connection. No more waiting in line!</li>
+
+        <h2>Parallelism:</h2>
+        <li>HTTP/1.1 opens a new TCP connection for each resource (like images, stylesheets, scripts). This can be slow due to connection setup time.</li>
+        <li>HTTP/2 is smarter. It reuses a single connection for all resources, reducing latency. Think of it as carpooling for web assets.</li>
+
+        <h2>Header Compression:</h2>
+        <li>HTTP/1.1 sends headers (metadata) with each request and response. These headers can get bloated, especially when dealing with cookies and user agents.</li>
+        <li>HTTP/2 compresses headers, minimizing overhead. It’s like packing your suitcase more efficiently for a trip.</li>
+
+        <h2>Server Push:</h2>
+        <li>HTTP/1.1 waits for the client to request resources. Imagine a waiter who only brings your food after you order.</li>
+        <li>HTTP/2 is proactive. It allows server push, where the server anticipates what resources the client will need and sends them ahead of time. It’s like a thoughtful waiter who brings you water without waiting for you to ask.</li>
+        <br>
+
+        <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2017/02/image02.gif?ssl=1">
+    
+</body>
+    
+</body>
+</html>
